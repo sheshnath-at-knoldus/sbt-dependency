@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.apache.hbase"
+		module="hbase-shaded"
+		revision="1.4.12"
+		status="release"
+		publication="20191125011715"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="">
+		Module of HBase with most deps shaded.
+		</description>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>2.9.10</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>
+		<m:properties__surefire.cygwinXmx>2800m</m:properties__surefire.cygwinXmx>
+		<m:dependency.management__org.apache.hbase__hbase-testing-util__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-testing-util__version>
+		<m:properties__maven.dependency.version>3.0.1</m:properties__maven.dependency.version>
+		<m:properties__hadoop.version>${hadoop-two.version}</m:properties__hadoop.version>
+		<m:properties__package.log.dir>/var/log/hbase</m:properties__package.log.dir>
+		<m:dependency.management__io.netty__netty-all__version>4.1.8.Final</m:dependency.management__io.netty__netty-all__version>
+		<m:properties__collections.version>3.2.2</m:properties__collections.version>
+		<m:dependency.management__org.codehaus.jackson__jackson-xc__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-xc__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.2</m:dependency.management__commons-logging__commons-logging__version>
+		<m:properties__surefire.secondPartGroups>org.apache.hadoop.hbase.testclassification.MediumTests</m:properties__surefire.secondPartGroups>
+		<m:properties__package.conf.dir>/etc/hbase</m:properties__package.conf.dir>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk16__scope>test</m:dependency.management__org.bouncycastle__bcprov-jdk16__scope>
+		<m:properties__tar.name>${project.build.finalName}.tar.gz</m:properties__tar.name>
+		<m:dependency.management__org.hamcrest__hamcrest-core__scope>test</m:dependency.management__org.hamcrest__hamcrest-core__scope>
+		<m:dependency.management__org.apache.hbase__hbase-hadoop2-compat__scope>test</m:dependency.management__org.apache.hbase__hbase-hadoop2-compat__scope>
+		<m:dependency.management__com.lmax__disruptor__version>3.3.0</m:dependency.management__com.lmax__disruptor__version>
+		<m:properties__hadoop-three.version>3.0.0-SNAPSHOT</m:properties__hadoop-three.version>
+		<m:dependency.management__org.apache.hbase__hbase-common__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-common__version>
+		<m:properties__test.build.classes>${project.build.directory}/test-classes</m:properties__test.build.classes>
+		<m:properties__argLine>${hbase-surefire.argLine}</m:properties__argLine>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_4>jline__jline</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_4>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_3>com.sun.jmx__jmxri</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_3>
+		<m:dependency.management__tomcat__jasper-compiler__version>5.5.23</m:dependency.management__tomcat__jasper-compiler__version>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_2>com.sun.jdmk__jmxtools</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_2>
+		<m:dependency.management__net.spy__spymemcached__version>2.11.6</m:dependency.management__net.spy__spymemcached__version>
+		<m:properties__final.name>${project.artifactId}-${project.version}</m:properties__final.name>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_1>javax.jms__jms</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_1>
+		<m:properties__maven.build.timestamp.format>
+      yyyy-MM-dd&apos;T&apos;HH:mm
+    </m:properties__maven.build.timestamp.format>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_0>io.netty__netty</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_0>
+		<m:dependency.management__org.apache.hbase__hbase-metrics__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-metrics__version>
+		<m:dependency.management__org.apache.hbase__hbase-common__scope>test</m:dependency.management__org.apache.hbase__hbase-common__scope>
+		<m:properties__jackson2.databind.version>2.9.10.1</m:properties__jackson2.databind.version>
+		<m:properties__zookeeper.version>3.4.10</m:properties__zookeeper.version>
+		<m:dependency.management__org.apache.hbase__hbase-thrift__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-thrift__version>
+		<m:dependency.management__org.apache.hbase__hbase-hadoop-compat__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-hadoop-compat__version>
+		<m:dependency.management__org.jamon__jamon-runtime__version>2.4.1</m:dependency.management__org.jamon__jamon-runtime__version>
+		<m:dependency.management__com.google.guava__guava__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__com.google.guava__guava__exclusion_0>
+		<m:properties__plexus.errorprone.javac.version>2.8.2</m:properties__plexus.errorprone.javac.version>
+		<m:dependency.management__com.google.guava__guava__version>12.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:properties__avro.version>1.7.7</m:properties__avro.version>
+		<m:dependency.management__org.mortbay.jetty__jsp-api-2.1__version>6.1.14</m:dependency.management__org.mortbay.jetty__jsp-api-2.1__version>
+		<m:dependency.management__org.apache.hbase__hbase-server__scope>test</m:dependency.management__org.apache.hbase__hbase-server__scope>
+		<m:properties__java.min.version>${compileSource}</m:properties__java.min.version>
+		<m:properties__surefire.secondPartForkCount>2</m:properties__surefire.secondPartForkCount>
+		<m:dependency.management__org.mockito__mockito-all__version>1.10.19</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__org.apache.hbase__hbase-external-blockcache__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-external-blockcache__version>
+		<m:properties__commons-io.version>2.4</m:properties__commons-io.version>
+		<m:properties__license.bundles.jquery>false</m:properties__license.bundles.jquery>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.2</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:properties__compileSource>1.7</m:properties__compileSource>
+		<m:dependency.management__org.jruby.joni__joni__version>2.1.2</m:dependency.management__org.jruby.joni__joni__version>
+		<m:dependency.management__org.apache.thrift__libthrift__version>0.9.3-1</m:dependency.management__org.apache.thrift__libthrift__version>
+		<m:properties__joni.version>2.1.2</m:properties__joni.version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.25</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.25</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.2</m:dependency.management__commons-cli__commons-cli__version>
+		<m:properties__mockito-all.version>1.10.19</m:properties__mockito-all.version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.8.1</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:properties__surefire.firstPartForkCount>1</m:properties__surefire.firstPartForkCount>
+		<m:dependency.management__org.apache.hbase__hbase-prefix-tree__scope>runtime</m:dependency.management__org.apache.hbase__hbase-prefix-tree__scope>
+		<m:dependency.management__org.apache.avro__avro__version>1.7.7</m:dependency.management__org.apache.avro__avro__version>
+		<m:properties__extra.enforcer.version>1.0-beta-6</m:properties__extra.enforcer.version>
+		<m:dependency.management__org.jruby__jruby-complete__version>1.6.8</m:dependency.management__org.jruby__jruby-complete__version>
+		<m:properties__slf4j.version>1.7.25</m:properties__slf4j.version>
+		<m:properties__asciidoctor.plugin.version>1.5.3</m:properties__asciidoctor.plugin.version>
+		<m:dependency.management__org.apache.kerby__kerb-client__version>1.0.1</m:dependency.management__org.apache.kerby__kerb-client__version>
+		<m:properties__license.bundles.logo>false</m:properties__license.bundles.logo>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.3.3</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>2.9.10</m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>
+		<m:properties__protobuf.version>2.5.0</m:properties__protobuf.version>
+		<m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>
+		<m:dependency.management__org.apache.hbase__hbase-procedure__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-procedure__version>
+		<m:properties__kerby.version>1.0.1</m:properties__kerby.version>
+		<m:properties__spotbugs.version>3.1.0-RC1</m:properties__spotbugs.version>
+		<m:properties__spy.version>2.11.6</m:properties__spy.version>
+		<m:properties__test.output.tofile>true</m:properties__test.output.tofile>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.9.10.1</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:properties__license.bundles.bootstrap>false</m:properties__license.bundles.bootstrap>
+		<m:properties__metrics-core.version>2.2.0</m:properties__metrics-core.version>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.1</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:properties__thrift.version>0.9.3-1</m:properties__thrift.version>
+		<m:dependency.management__tomcat__jasper-compiler__scope>runtime</m:dependency.management__tomcat__jasper-compiler__scope>
+		<m:dependency.management__org.apache.hbase__hbase-thrift__scope>test</m:dependency.management__org.apache.hbase__hbase-thrift__scope>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.4</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.mortbay.jetty__jsp-2.1__exclusion_1>org.eclipse.jdt__core</m:dependency.management__org.mortbay.jetty__jsp-2.1__exclusion_1>
+		<m:dependency.management__org.mortbay.jetty__jsp-2.1__exclusion_0>ant__ant</m:dependency.management__org.mortbay.jetty__jsp-2.1__exclusion_0>
+		<m:dependency.management__org.mockito__mockito-all__scope>test</m:dependency.management__org.mockito__mockito-all__scope>
+		<m:properties__maven.min.version>3.0.3</m:properties__maven.min.version>
+		<m:properties__jetty.version>6.1.26</m:properties__jetty.version>
+		<m:dependency.management__org.apache.hbase__hbase-testing-util__scope>test</m:dependency.management__org.apache.hbase__hbase-testing-util__scope>
+		<m:dependency.management__com.sun.jersey__jersey-server__version>1.9</m:dependency.management__com.sun.jersey__jersey-server__version>
+		<m:properties__commons-lang3.version>3.8.1</m:properties__commons-lang3.version>
+		<m:properties__htrace.version>3.1.0-incubating</m:properties__htrace.version>
+		<m:properties__jackson2.version>2.9.10</m:properties__jackson2.version>
+		<m:properties__log4j.version>1.2.17</m:properties__log4j.version>
+		<m:properties__surefire.version>2.22.2</m:properties__surefire.version>
+		<m:properties__netty.version>4.1.8.Final</m:properties__netty.version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__version>1.3</m:dependency.management__org.hamcrest__hamcrest-core__version>
+		<m:properties__surefire.skipSecondPart>false</m:properties__surefire.skipSecondPart>
+		<m:properties__commons-math.version>2.2</m:properties__commons-math.version>
+		<m:properties__jruby.version>1.6.8</m:properties__jruby.version>
+		<m:dependency.management__org.apache.hbase__hbase-it__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-it__version>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+		<m:dependency.management__commons-codec__commons-codec__version>1.9</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-core__version>3.1.2</m:dependency.management__io.dropwizard.metrics__metrics-core__version>
+		<m:properties__commons-logging.version>1.2</m:properties__commons-logging.version>
+		<m:properties__surefire.provider>surefire-junit47</m:properties__surefire.provider>
+		<m:properties__procedure.test.jar>hbase-procedure-${project.version}-tests.jar</m:properties__procedure.test.jar>
+		<m:dependency.management__org.apache.hbase__hbase-rsgroup__scope>test</m:dependency.management__org.apache.hbase__hbase-rsgroup__scope>
+		<m:properties__netty.hadoop.version>3.6.2.Final</m:properties__netty.hadoop.version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__hbase-surefire.argLine>-enableassertions -Dhbase.test -Xmx${surefire.Xmx}
+      ${maxpermsize} -Djava.security.egd=file:/dev/./urandom -Djava.net.preferIPv4Stack=true
+      -Djava.awt.headless=true -Djdk.net.URLClassPath.disableClassPathURLCheck=true
+    </m:properties__hbase-surefire.argLine>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.2</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__org.mortbay.jetty__jetty__exclusion_0>org.mortbay.jetty__servlet-api</m:dependency.management__org.mortbay.jetty__jetty__exclusion_0>
+		<m:dependency.management__org.apache.hbase__hbase-rsgroup__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-rsgroup__version>
+		<m:dependency.management__org.mortbay.jetty__jetty-util__version>6.1.26</m:dependency.management__org.mortbay.jetty__jetty-util__version>
+		<m:properties__jacoco.version>0.7.5.201505241946</m:properties__jacoco.version>
+		<m:properties__jettison.version>1.3.3</m:properties__jettison.version>
+		<m:properties__disruptor.version>3.3.0</m:properties__disruptor.version>
+		<m:properties__it.test.jar>hbase-it-${project.version}-tests.jar</m:properties__it.test.jar>
+		<m:properties__hbase.shaded.gson.version>3.0.0</m:properties__hbase.shaded.gson.version>
+		<m:properties__javadoc.version>2.10.3</m:properties__javadoc.version>
+		<m:properties__common.test.jar>hbase-common-${project.version}-tests.jar</m:properties__common.test.jar>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__findbugs.maven.version>3.0.4</m:properties__findbugs.maven.version>
+		<m:dependency.management__com.sun.jersey__jersey-json__exclusion_0>stax__stax-api</m:dependency.management__com.sun.jersey__jersey-json__exclusion_0>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:dependency.management__tomcat__jasper-runtime__exclusion_0>javax.servlet__servlet-api</m:dependency.management__tomcat__jasper-runtime__exclusion_0>
+		<m:properties__license.bundles.dependencies>true</m:properties__license.bundles.dependencies>
+		<m:properties__annotations.test.jar>hbase-annotations-${project.version}-tests.jar</m:properties__annotations.test.jar>
+		<m:dependency.management__org.mortbay.jetty__jsp-2.1__version>6.1.14</m:dependency.management__org.mortbay.jetty__jsp-2.1__version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk16__version>1.46</m:dependency.management__org.bouncycastle__bcprov-jdk16__version>
+		<m:properties__maven.test.skip>true</m:properties__maven.test.skip>
+		<m:properties__hadoop-two.version>2.7.4</m:properties__hadoop-two.version>
+		<m:dependency.management__org.apache.hbase__hbase-metrics__scope>test</m:dependency.management__org.apache.hbase__hbase-metrics__scope>
+		<m:dependency.management__org.apache.hbase__hbase-metrics-api__scope>test</m:dependency.management__org.apache.hbase__hbase-metrics-api__scope>
+		<m:dependency.management__org.mortbay.jetty__servlet-api-2.5__version>6.1.14</m:dependency.management__org.mortbay.jetty__servlet-api-2.5__version>
+		<m:properties__maven.antrun.version>1.6</m:properties__maven.antrun.version>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__version>3.4.10</m:dependency.management__org.apache.zookeeper__zookeeper__version>
+		<m:properties__commons-cli.version>1.2</m:properties__commons-cli.version>
+		<m:properties__checkstyle.version>6.18</m:properties__checkstyle.version>
+		<m:properties__compat.module>hbase-hadoop2-compat</m:properties__compat.module>
+		<m:dependency.management__javax.xml.bind__jaxb-api__exclusion_0>javax.xml.stream__stax-api</m:dependency.management__javax.xml.bind__jaxb-api__exclusion_0>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:properties__thrift.path>thrift</m:properties__thrift.path>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:properties__commons-codec.version>1.9</m:properties__commons-codec.version>
+		<m:properties__bouncycastle.version>1.46</m:properties__bouncycastle.version>
+		<m:properties__http-components-client.version>4.5.2</m:properties__http-components-client.version>
+		<m:dependency.management__org.apache.hbase__hbase-examples__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-examples__version>
+		<m:dependency.management__org.apache.hbase__hbase-prefix-tree__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-prefix-tree__version>
+		<m:dependency.management__org.apache.hbase__hbase-rest__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-rest__version>
+		<m:dependency.management__org.mortbay.jetty__jetty__version>6.1.26</m:dependency.management__org.mortbay.jetty__jetty__version>
+		<m:properties__jackson1.version>1.9.13</m:properties__jackson1.version>
+		<m:properties__jcodings.version>1.0.8</m:properties__jcodings.version>
+		<m:properties__surefire.firstPartGroups>org.apache.hadoop.hbase.testclassification.SmallTests</m:properties__surefire.firstPartGroups>
+		<e:sbtTransformHash>911c441af968a67c46e6c047435710200fb94539</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:dependency.management__org.apache.hbase__hbase-rest__scope>test</m:dependency.management__org.apache.hbase__hbase-rest__scope>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M1|org.codehaus.mojo__xml-maven-plugin__1.0|org.codehaus.mojo__findbugs-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__3.4|org.asciidoctor__asciidoctor-maven-plugin__1.5.3|null__maven-antrun-plugin__1.6|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.felix__maven-bundle-plugin__2.5.3|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M1|org.codehaus.mojo__xml-maven-plugin__1.0|org.codehaus.mojo__findbugs-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.apache.maven.plugins__maven-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__3.4|org.asciidoctor__asciidoctor-maven-plugin__1.5.3|null__maven-antrun-plugin__1.6|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.felix__maven-bundle-plugin__2.5.3|org.apache.maven.plugins__maven-site-plugin__null|null__maven-assembly-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.5</m:maven.plugins>
+		<m:dependency.management__org.mortbay.jetty__jetty-sslengine__version>6.1.26</m:dependency.management__org.mortbay.jetty__jetty-sslengine__version>
+		<m:dependency.management__com.google.protobuf__protobuf-java__version>2.5.0</m:dependency.management__com.google.protobuf__protobuf-java__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:properties__assembly.file>src/main/assembly/hadoop-two-compat.xml</m:properties__assembly.file>
+		<m:dependency.management__org.apache.commons__commons-math__version>2.2</m:dependency.management__org.apache.commons__commons-math__version>
+		<m:properties__findbugs-annotations>1.3.9-1</m:properties__findbugs-annotations>
+		<m:properties__jersey.version>1.9</m:properties__jersey.version>
+		<m:dependency.management__org.jruby.jcodings__jcodings__version>1.0.8</m:dependency.management__org.jruby.jcodings__jcodings__version>
+		<m:dependency.management__com.sun.jersey__jersey-core__version>1.9</m:dependency.management__com.sun.jersey__jersey-core__version>
+		<m:dependency.management__org.apache.hbase__hbase-metrics-api__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-metrics-api__version>
+		<m:properties__buildDate>${maven.build.timestamp}</m:properties__buildDate>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:dependency.management__org.apache.hbase__hbase-server__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-server__version>
+		<m:dependency.management__org.apache.hbase__hbase-shell__scope>test</m:dependency.management__org.apache.hbase__hbase-shell__scope>
+		<m:properties__hbase-surefire.cygwin-argLine>-enableassertions -Xmx${surefire.cygwinXmx} ${maxpermsize}
+      -Djava.security.egd=file:/dev/./urandom -Djava.net.preferIPv4Stack=true
+      &quot;-Djava.library.path=${hadoop.library.path};${java.library.path}&quot;
+    </m:properties__hbase-surefire.cygwin-argLine>
+		<m:properties__source.skip>true</m:properties__source.skip>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:dependency.management__org.apache.hbase__hbase-client__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-client__version>
+		<m:dependency.management__org.codehaus.jackson__jackson-jaxrs__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-jaxrs__version>
+		<m:properties__error-prone.version>2.1.1</m:properties__error-prone.version>
+		<m:properties__httpclient.version>3.1</m:properties__httpclient.version>
+		<m:properties__maven.compiler.version>3.6.1</m:properties__maven.compiler.version>
+		<m:dependency.management__org.apache.hbase__hbase-hadoop-compat__scope>test</m:dependency.management__org.apache.hbase__hbase-hadoop-compat__scope>
+		<m:properties__commons-lang.version>2.6</m:properties__commons-lang.version>
+		<m:properties__package.release>1</m:properties__package.release>
+		<m:dependency.management__org.apache.htrace__htrace-core__version>3.1.0-incubating</m:dependency.management__org.apache.htrace__htrace-core__version>
+		<m:properties__package.prefix>/usr</m:properties__package.prefix>
+		<m:dependency.management__tomcat__jasper-runtime__version>5.5.23</m:dependency.management__tomcat__jasper-runtime__version>
+		<m:properties__jaxb-api.version>2.2.2</m:properties__jaxb-api.version>
+		<m:dependency.management__org.apache.kerby__kerb-simplekdc__version>1.0.1</m:dependency.management__org.apache.kerby__kerb-simplekdc__version>
+		<m:properties__shell-executable>bash</m:properties__shell-executable>
+		<m:properties__jasper.version>5.5.23</m:properties__jasper.version>
+		<m:properties__jamon-runtime.version>2.4.1</m:properties__jamon-runtime.version>
+		<m:dependency.management__tomcat__jasper-runtime__scope>runtime</m:dependency.management__tomcat__jasper-runtime__scope>
+		<m:properties__license.debug.print.included>false</m:properties__license.debug.print.included>
+		<m:dependency.management__com.sun.jersey__jersey-json__version>1.9</m:dependency.management__com.sun.jersey__jersey-json__version>
+		<m:properties__surefire.Xmx>2800m</m:properties__surefire.Xmx>
+		<m:properties__surefire.timeout>900</m:properties__surefire.timeout>
+		<m:properties__hamcrest.version>1.3</m:properties__hamcrest.version>
+		<m:properties__hadoop-two-minikdc.version>${hadoop-two.version}</m:properties__hadoop-two-minikdc.version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.9.10</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:dependency.management__com.github.stephenc.findbugs__findbugs-annotations__version>1.3.9-1</m:dependency.management__com.github.stephenc.findbugs__findbugs-annotations__version>
+		<m:properties__commons-net.version>3.1</m:properties__commons-net.version>
+		<m:dependency.management__org.apache.hbase__hbase-shell__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-shell__version>
+		<m:dependency.management__org.apache.hbase__hbase-protocol__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-protocol__version>
+		<m:dependency.management__commons-net__commons-net__version>3.1</m:dependency.management__commons-net__commons-net__version>
+		<m:properties__httpcore.version>4.4.4</m:properties__httpcore.version>
+		<m:properties__maven.enforcer.version>3.0.0-M1</m:properties__maven.enforcer.version>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.apache.hbase.thirdparty__hbase-shaded-gson__version>3.0.0</m:dependency.management__org.apache.hbase.thirdparty__hbase-shaded-gson__version>
+		<m:dependency.management__org.apache.thrift__libthrift__exclusion_0>org.slf4j__slf4j-simple</m:dependency.management__org.apache.thrift__libthrift__exclusion_0>
+		<m:properties__maven.assembly.version>3.1.1</m:properties__maven.assembly.version>
+		<m:dependency.management__javax.xml.bind__jaxb-api__version>2.2.2</m:dependency.management__javax.xml.bind__jaxb-api__version>
+		<m:properties__jetty.jspapi.version>6.1.14</m:properties__jetty.jspapi.version>
+		<m:properties__surefire.skipFirstPart>false</m:properties__surefire.skipFirstPart>
+		<m:properties__package.pid.dir>/var/run/hbase</m:properties__package.pid.dir>
+		<m:properties__clover.version>4.0.3</m:properties__clover.version>
+		<m:dependency.management__com.yammer.metrics__metrics-core__version>2.2.0</m:dependency.management__com.yammer.metrics__metrics-core__version>
+		<m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>1.9.13</m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>
+		<m:properties__guava.version>12.0.1</m:properties__guava.version>
+		<m:dependency.management__tomcat__jasper-compiler__exclusion_0>javax.servlet__jsp-api</m:dependency.management__tomcat__jasper-compiler__exclusion_0>
+		<m:properties__server.test.jar>hbase-server-${project.version}-tests.jar</m:properties__server.test.jar>
+		<m:dependency.management__tomcat__jasper-compiler__exclusion_2>javax.servlet__servlet-api</m:dependency.management__tomcat__jasper-compiler__exclusion_2>
+		<m:dependency.management__tomcat__jasper-compiler__exclusion_1>ant__ant</m:dependency.management__tomcat__jasper-compiler__exclusion_1>
+		<m:properties__surefire.testFailureIgnore>false</m:properties__surefire.testFailureIgnore>
+		<m:dependency.management__org.apache.hbase__hbase-annotations__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-annotations__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.apache.hbase__hbase-it__scope>test</m:dependency.management__org.apache.hbase__hbase-it__scope>
+		<m:dependency.management__org.apache.hbase__hbase-hadoop2-compat__version>1.4.12</m:dependency.management__org.apache.hbase__hbase-hadoop2-compat__version>
+		<m:properties__jamon.plugin.version>2.4.1</m:properties__jamon.plugin.version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.hbase" name="hbase-resource-bundle" rev="1.4.12" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile);compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="log4j" name="log4j" rev="1.2.17" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.25" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.github.stephenc.findbugs" name="findbugs-annotations" rev="1.3.9-1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.10.19" force="true" conf="test->runtime(*),master(compile)"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.sonarsource.parent"
+		module="parent"
+		revision="59.0.29"
+		status="release"
+		publication="20210428102528"
+	>
+		<license name="GNU LGPL 3" url="http://www.gnu.org/licenses/lgpl.txt" />
+		<description homepage="http://docs.sonarqube.org/display/PLUG/Plugin+Library">
+		Parent pom of SonarSource public projects
+		</description>
+		<m:properties__license.name>GNU LGPL v3</m:properties__license.name>
+		<m:properties__version.mycila.license.plugin>3.0</m:properties__version.mycila.license.plugin>
+		<m:properties__version.buildnumber.plugin>1.4</m:properties__version.buildnumber.plugin>
+		<m:properties__version.javadoc.plugin>3.1.0</m:properties__version.javadoc.plugin>
+		<m:properties__version.enforcer.plugin>3.0.0-M1</m:properties__version.enforcer.plugin>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__jdk.min.version>1.8</m:properties__jdk.min.version>
+		<m:properties__timestamp>${maven.build.timestamp}</m:properties__timestamp>
+		<m:properties__version.clean.plugin>3.1.0</m:properties__version.clean.plugin>
+		<m:properties__version.sonar-dev.plugin>1.8</m:properties__version.sonar-dev.plugin>
+		<m:properties__version.dependency.plugin>3.1.1</m:properties__version.dependency.plugin>
+		<m:properties__version.plugin.plugin>3.6.0</m:properties__version.plugin.plugin>
+		<m:properties__version.beanshell.plugin>1.4</m:properties__version.beanshell.plugin>
+		<m:properties__license.owner>SonarSource SA</m:properties__license.owner>
+		<m:properties__version.gpg.plugin>0.3.1</m:properties__version.gpg.plugin>
+		<m:properties__gitRepositoryName>parent-oss</m:properties__gitRepositoryName>
+		<m:properties__version.sonar-packaging.plugin>1.18.0.372</m:properties__version.sonar-packaging.plugin>
+		<e:sbtTransformHash>d280f3c48f2b252190387c441175241a14abf06d</e:sbtTransformHash>
+		<m:properties__version.resources.plugin>3.1.0</m:properties__version.resources.plugin>
+		<m:properties__maven.min.version>3.3.9</m:properties__maven.min.version>
+		<m:properties__sonar.snapshotRepository.id>snapshot</m:properties__sonar.snapshotRepository.id>
+		<m:properties__version.jacoco.plugin>0.8.6</m:properties__version.jacoco.plugin>
+		<m:maven.plugins>org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.sonarsource.sonar-packaging-maven-plugin__sonar-packaging-maven-plugin__null|com.mycila__license-maven-plugin__3.0|com.github.genthaler__beanshell-maven-plugin__null</m:maven.plugins>
+		<m:properties__license.mailto>mailto:info AT sonarsource DOT com</m:properties__license.mailto>
+		<m:properties__version.shade.plugin>3.2.1</m:properties__version.shade.plugin>
+		<m:properties__version.source.plugin>3.1.0</m:properties__version.source.plugin>
+		<m:properties__version.surefire.plugin>2.22.2</m:properties__version.surefire.plugin>
+		<m:properties__version.artifactory.plugin>2.6.1</m:properties__version.artifactory.plugin>
+		<m:properties__version.failsafe.plugin>${version.surefire.plugin}</m:properties__version.failsafe.plugin>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__version.install.plugin>3.0.0-M1</m:properties__version.install.plugin>
+		<m:properties__version.deploy.plugin>3.0.0-M1</m:properties__version.deploy.plugin>
+		<m:properties__license.years>${project.inceptionYear}-2021</m:properties__license.years>
+		<m:properties__version.jar.plugin>3.1.2</m:properties__version.jar.plugin>
+		<m:properties__version.codehaus.license.plugin>2.0.0</m:properties__version.codehaus.license.plugin>
+		<m:properties__version.assembly.plugin>3.1.1</m:properties__version.assembly.plugin>
+		<m:properties__version.jarjar.plugin>1.9</m:properties__version.jarjar.plugin>
+		<m:properties__version.native2ascii.plugin>1.0-beta-1</m:properties__version.native2ascii.plugin>
+		<m:properties__version.compiler.plugin>3.8.1</m:properties__version.compiler.plugin>
+		<m:properties__license.title>${project.name}</m:properties__license.title>
+		<m:properties__version.site.plugin>3.7.1</m:properties__version.site.plugin>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

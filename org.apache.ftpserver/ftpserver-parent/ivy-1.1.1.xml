@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.apache.ftpserver"
+		module="ftpserver-parent"
+		revision="1.1.1"
+		status="release"
+		publication="20170416014509"
+	>
+		<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="http://mina.apache.org/ftpserver" />
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:properties__maven.compile.target>1.7</m:properties__maven.compile.target>
+		<m:dependency.management__commons-codec__commons-codec__version>1.10</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__commons-net__commons-net__version>3.5</m:dependency.management__commons-net__commons-net__version>
+		<m:dependency.management__hsqldb__hsqldb__version>1.8.0.10</m:dependency.management__hsqldb__hsqldb__version>
+		<m:properties__commons.codec.version>1.10</m:properties__commons.codec.version>
+		<m:properties__slf4j.log4j12.version>1.7.21</m:properties__slf4j.log4j12.version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:dependency.management__org.apache.ftpserver__ftplet-api__version>1.1.1</m:dependency.management__org.apache.ftpserver__ftplet-api__version>
+		<m:properties__additionalparam>-Xdoclint:none</m:properties__additionalparam>
+		<m:properties__commons.net.version>3.5</m:properties__commons.net.version>
+		<m:properties__spring.context.version>2.5.5</m:properties__spring.context.version>
+		<m:dependency.management__org.springframework__spring-context__version>2.5.5</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.21</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<e:sbtTransformHash>4af97ca2636b0f70054c4ef70cc77ed61c28a4fd</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__1.3.1|null__maven-surefire-plugin__2.18.1|null__maven-eclipse-plugin__2.9|null__maven-release-plugin__2.5.1|null__maven-remote-resources-plugin__1.5|null__maven-compiler-plugin__3.5.1|null__maven-source-plugin__2.4|null__maven-idea-plugin__2.2.1|null__maven-jar-plugin__2.5|org.apache.maven.plugins__maven-war-plugin__2.5|org.apache.rat__apache-rat-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.21</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.21</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.apache.ftpserver__ftpserver-core__version>1.1.1</m:dependency.management__org.apache.ftpserver__ftpserver-core__version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__jcl.over.slf4j.version>1.7.21</m:properties__jcl.over.slf4j.version>
+		<m:properties__log4j.version>1.2.17</m:properties__log4j.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__surefire.version>2.19.1</m:properties__surefire.version>
+		<m:properties__hsqldb.version>1.8.0.10</m:properties__hsqldb.version>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__mina.core.version>2.0.16</m:properties__mina.core.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__ftpserver.version>${project.version}</m:properties__ftpserver.version>
+		<m:properties__maven.compile.source>1.7</m:properties__maven.compile.source>
+		<m:properties__slf4j.api.version>1.7.21</m:properties__slf4j.api.version>
+		<m:dependency.management__org.apache.mina__mina-core__version>2.0.16</m:dependency.management__org.apache.mina__mina-core__version>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+		<m:dependency.management__org.springframework__spring-context__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.springframework__spring-context__exclusion_0>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

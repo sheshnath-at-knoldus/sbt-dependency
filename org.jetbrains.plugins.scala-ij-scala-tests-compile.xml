@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.jetbrains.plugins.scala"
+		module="ij-scala-tests"
+		revision="working@nashtech-Vostro-3500"
+
+		conf="compile"
+		confs="compile"
+		date="20240315121138"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.13.10" status="release" pubdate="20221008234352" resolver="public" artresolver="main" homepage="https://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), compile(*)" position="20">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1832" time="1028" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.13.10.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.13.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.pom"/>
+				<caller organisation="org.jetbrains.plugins.scala" name="ij-scala-tests" conf="compile" rev="2.13.10" rev-constraint-default="2.13.10" rev-constraint-dynamic="2.13.10" callerrev="working@nashtech-Vostro-3500"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.7.5"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="successful" details="" size="3745916" time="28261" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.13.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.13.10"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.7.5"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.13.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="2.13.10"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.13.10" status="release" pubdate="20221008234630" resolver="public" artresolver="main" homepage="https://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="21">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1598" time="1120" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.10.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.pom"/>
+				<caller organisation="org.scalameta" name="common_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="com.geirsson" name="metaconfig-core_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.9.10"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parallel-collections_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.2.0"/>
+				<caller organisation="org.scalameta" name="fastparse-utils_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="com.geirsson" name="metaconfig-typesafe-config_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.9.10"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.7.5"/>
+				<caller organisation="org.scalameta" name="scalameta_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.typelevel" name="paiges-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.3.0"/>
+				<caller organisation="org.scalameta" name="parsers_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<caller organisation="org.scalameta" name="trees_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="default, compile, runtime, master" rev="2.13.10" rev-constraint-default="2.13.10" rev-constraint-dynamic="2.13.10" callerrev="2.13.10"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.1.2"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="5949244" time="38911" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.13.1" status="release" pubdate="20190918142936" resolver="public" artresolver="main" evicted="latest-revision" evicted-reason="" homepage="https://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1600" time="915" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.1.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-library/ivy-2.13.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.1/scala-library-2.13.1.pom"/>
+				<evicted-by rev="2.13.10"/>
+				<caller organisation="org.scalameta" name="common_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="com.geirsson" name="metaconfig-core_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.9.10"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parallel-collections_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.2.0"/>
+				<caller organisation="org.scalameta" name="fastparse-utils_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="com.geirsson" name="metaconfig-typesafe-config_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.9.10"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.7.5"/>
+				<caller organisation="org.scalameta" name="scalameta_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.typelevel" name="paiges-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.3.0"/>
+				<caller organisation="org.scalameta" name="parsers_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<caller organisation="org.scalameta" name="trees_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.1.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.13.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.13.1"/>
+				<caller organisation="org.scalameta" name="trees_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scalameta" name="common_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.1.2"/>
+				<caller organisation="org.scalameta" name="scalameta_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.typelevel" name="paiges-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.3.0"/>
+				<caller organisation="org.scalameta" name="parsers_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.13.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.13.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parallel-collections_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.2.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.1.2"/>
+				<caller organisation="org.scalameta" name="fastparse-utils_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<caller organisation="org.typelevel" name="paiges-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.3.0"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="scalafmt-core_2.13">
+			<revision name="2.7.5" status="release" pubdate="20201017004344" resolver="public" artresolver="main" homepage="https://github.com/scalameta/scalafmt" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3414" time="918" location="/home/nashtech/.ivy2/cache/org.scalameta/scalafmt-core_2.13/ivy-2.7.5.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/scalafmt-core_2.13/ivy-2.7.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/2.7.5/scalafmt-core_2.13-2.7.5.pom"/>
+				<caller organisation="org.jetbrains.plugins.scala" name="ij-scala-tests" conf="compile" rev="2.7.5" rev-constraint-default="2.7.5" rev-constraint-dynamic="2.7.5" callerrev="working@nashtech-Vostro-3500"/>
+				<artifacts>
+					<artifact name="scalafmt-core_2.13" type="jar" ext="jar" status="successful" details="" size="1534304" time="16291" location="/home/nashtech/.ivy2/cache/org.scalameta/scalafmt-core_2.13/jars/scalafmt-core_2.13-2.7.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/2.7.5/scalafmt-core_2.13-2.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.geirsson" name="metaconfig-typesafe-config_2.13">
+			<revision name="0.9.10" status="release" pubdate="20200410160936" resolver="public" artresolver="main" homepage="https://github.com/olafurpg/metaconfig" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2794" time="826" location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-typesafe-config_2.13/ivy-0.9.10.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-typesafe-config_2.13/ivy-0.9.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.9.10/metaconfig-typesafe-config_2.13-0.9.10.pom"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="2.7.5"/>
+				<artifacts>
+					<artifact name="metaconfig-typesafe-config_2.13" type="jar" ext="jar" status="successful" details="" size="10422" time="813" location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-typesafe-config_2.13/jars/metaconfig-typesafe-config_2.13-0.9.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.13/0.9.10/metaconfig-typesafe-config_2.13-0.9.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502202416" resolver="main" artresolver="main" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2914" time="0" location="/home/nashtech/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" original-local-location="/home/nashtech/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="com.geirsson" name="metaconfig-typesafe-config_2.13" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/home/nashtech/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parallel-collections_2.13">
+			<revision name="0.2.0" status="release" pubdate="20190608214803" resolver="public" artresolver="main" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1799" time="1127" location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-parallel-collections_2.13/ivy-0.2.0.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-parallel-collections_2.13/ivy-0.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parallel-collections_2.13/0.2.0/scala-parallel-collections_2.13-0.2.0.pom"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="0.2.0" rev-constraint-default="0.2.0" rev-constraint-dynamic="0.2.0" callerrev="2.7.5"/>
+				<artifacts>
+					<artifact name="scala-parallel-collections_2.13" type="jar" ext="jar" status="successful" details="" size="1123278" time="15463" location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-parallel-collections_2.13/jars/scala-parallel-collections_2.13-0.2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parallel-collections_2.13/0.2.0/scala-parallel-collections_2.13-0.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="scalameta_2.13">
+			<revision name="4.3.22" status="release" pubdate="20200909170914" resolver="public" artresolver="main" homepage="https://github.com/scalameta/scalameta" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="BSD" url="https://github.com/scalameta/scalameta/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="3213" time="820" location="/home/nashtech/.ivy2/cache/org.scalameta/scalameta_2.13/ivy-4.3.22.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/scalameta_2.13/ivy-4.3.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.3.22/scalameta_2.13-4.3.22.pom"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="4.3.22" rev-constraint-default="4.3.22" rev-constraint-dynamic="4.3.22" callerrev="2.7.5"/>
+				<artifacts>
+					<artifact name="scalameta_2.13" type="jar" ext="jar" status="successful" details="" size="762377" time="9214" location="/home/nashtech/.ivy2/cache/org.scalameta/scalameta_2.13/jars/scalameta_2.13-4.3.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.3.22/scalameta_2.13-4.3.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.13.3" status="release" pubdate="20200626022508" resolver="public" artresolver="main" homepage="https://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1666" time="710" location="/home/nashtech/.ivy2/cache/org.scala-lang/scalap/ivy-2.13.3.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang/scalap/ivy-2.13.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.3/scalap-2.13.3.pom"/>
+				<caller organisation="org.scalameta" name="scalameta_2.13" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="4.3.22"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="successful" details="" size="527410" time="4118" location="/home/nashtech/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.13.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.13.3/scalap-2.13.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="parsers_2.13">
+			<revision name="4.3.22" status="release" pubdate="20200909170905" resolver="public" artresolver="main" homepage="https://github.com/scalameta/scalameta" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="BSD" url="https://github.com/scalameta/scalameta/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="3470" time="822" location="/home/nashtech/.ivy2/cache/org.scalameta/parsers_2.13/ivy-4.3.22.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/parsers_2.13/ivy-4.3.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.3.22/parsers_2.13-4.3.22.pom"/>
+				<caller organisation="org.scalameta" name="scalameta_2.13" conf="compile, runtime" rev="4.3.22" rev-constraint-default="4.3.22" rev-constraint-dynamic="4.3.22" callerrev="4.3.22"/>
+				<artifacts>
+					<artifact name="parsers_2.13" type="jar" ext="jar" status="successful" details="" size="1107186" time="11130" location="/home/nashtech/.ivy2/cache/org.scalameta/parsers_2.13/jars/parsers_2.13-4.3.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.3.22/parsers_2.13-4.3.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="trees_2.13">
+			<revision name="4.3.22" status="release" pubdate="20200909170916" resolver="public" artresolver="main" homepage="https://github.com/scalameta/scalameta" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="BSD" url="https://github.com/scalameta/scalameta/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="3806" time="1024" location="/home/nashtech/.ivy2/cache/org.scalameta/trees_2.13/ivy-4.3.22.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/trees_2.13/ivy-4.3.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.3.22/trees_2.13-4.3.22.pom"/>
+				<caller organisation="org.scalameta" name="parsers_2.13" conf="compile, runtime" rev="4.3.22" rev-constraint-default="4.3.22" rev-constraint-dynamic="4.3.22" callerrev="4.3.22"/>
+				<artifacts>
+					<artifact name="trees_2.13" type="jar" ext="jar" status="successful" details="" size="5347447" time="39852" location="/home/nashtech/.ivy2/cache/org.scalameta/trees_2.13/jars/trees_2.13-4.3.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.3.22/trees_2.13-4.3.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="fastparse_2.13">
+			<revision name="1.0.1" status="release" pubdate="20190615030654" resolver="public" artresolver="main" homepage="https://github.com/lihaoyi/scala-parser" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2362" time="820" location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse_2.13/ivy-1.0.1.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse_2.13/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/fastparse_2.13/1.0.1/fastparse_2.13-1.0.1.pom"/>
+				<caller organisation="org.scalameta" name="trees_2.13" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="4.3.22"/>
+				<artifacts>
+					<artifact name="fastparse_2.13" type="jar" ext="jar" status="successful" details="" size="345029" time="2269" location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse_2.13/jars/fastparse_2.13-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/fastparse_2.13/1.0.1/fastparse_2.13-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="fastparse-utils_2.13">
+			<revision name="1.0.1" status="release" pubdate="20190615030619" resolver="public" artresolver="main" homepage="https://github.com/lihaoyi/scala-parser" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2197" time="923" location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse-utils_2.13/ivy-1.0.1.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse-utils_2.13/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/fastparse-utils_2.13/1.0.1/fastparse-utils_2.13-1.0.1.pom"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
+				<artifacts>
+					<artifact name="fastparse-utils_2.13" type="jar" ext="jar" status="successful" details="" size="72220" time="1312" location="/home/nashtech/.ivy2/cache/org.scalameta/fastparse-utils_2.13/jars/fastparse-utils_2.13-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/fastparse-utils_2.13/1.0.1/fastparse-utils_2.13-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalameta" name="common_2.13">
+			<revision name="4.3.22" status="release" pubdate="20200909170915" resolver="public" artresolver="main" homepage="https://github.com/scalameta/scalameta" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="BSD" url="https://github.com/scalameta/scalameta/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="3271" time="992" location="/home/nashtech/.ivy2/cache/org.scalameta/common_2.13/ivy-4.3.22.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scalameta/common_2.13/ivy-4.3.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.3.22/common_2.13-4.3.22.pom"/>
+				<caller organisation="org.scalameta" name="trees_2.13" conf="compile, runtime" rev="4.3.22" rev-constraint-default="4.3.22" rev-constraint-dynamic="4.3.22" callerrev="4.3.22"/>
+				<artifacts>
+					<artifact name="common_2.13" type="jar" ext="jar" status="successful" details="" size="822309" time="3876" location="/home/nashtech/.ivy2/cache/org.scalameta/common_2.13/jars/common_2.13-4.3.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.3.22/common_2.13-4.3.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.13.3" status="release" pubdate="20200626022559" resolver="public" artresolver="main" homepage="https://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2338" time="1230" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.13.3.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.13.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.pom"/>
+				<caller organisation="org.scala-lang" name="scalap" conf="compile, runtime" rev="2.13.3" rev-constraint-default="2.13.3" rev-constraint-dynamic="2.13.3" callerrev="2.13.3"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="successful" details="" size="11201022" time="73546" location="/home/nashtech/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.13.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jline" name="jline">
+			<revision name="3.15.0" status="release" pubdate="20200526185600" resolver="public" artresolver="main" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<license name="The BSD License" url="https://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="16917" time="1347" location="/home/nashtech/.ivy2/cache/org.jline/jline/ivy-3.15.0.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.jline/jline/ivy-3.15.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="3.15.0" rev-constraint-default="3.15.0" rev-constraint-dynamic="3.15.0" callerrev="2.13.3"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="successful" details="" size="947878" time="4482" location="/home/nashtech/.ivy2/cache/org.jline/jline/jars/jline-3.15.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.jna" name="jna">
+			<revision name="5.3.1" status="release" pubdate="20190428154301" resolver="public" artresolver="main" homepage="https://github.com/java-native-access/jna" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
+				<license name="Apache License v2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1580" time="1038" location="/home/nashtech/.ivy2/cache/net.java.dev.jna/jna/ivy-5.3.1.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/net.java.dev.jna/jna/ivy-5.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="2.13.3"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="successful" details="" size="1505196" time="4823" location="/home/nashtech/.ivy2/cache/net.java.dev.jna/jna/jars/jna-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.geirsson" name="metaconfig-core_2.13">
+			<revision name="0.9.10" status="release" pubdate="20200410160936" resolver="public" artresolver="main" homepage="https://github.com/olafurpg/metaconfig" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3358" time="1130" location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-core_2.13/ivy-0.9.10.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-core_2.13/ivy-0.9.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.9.10/metaconfig-core_2.13-0.9.10.pom"/>
+				<caller organisation="com.geirsson" name="metaconfig-typesafe-config_2.13" conf="compile, runtime" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="0.9.10"/>
+				<caller organisation="org.scalameta" name="scalafmt-core_2.13" conf="default, compile, runtime, master" rev="0.9.10" rev-constraint-default="0.9.10" rev-constraint-dynamic="0.9.10" callerrev="2.7.5"/>
+				<artifacts>
+					<artifact name="metaconfig-core_2.13" type="jar" ext="jar" status="successful" details="" size="423001" time="6023" location="/home/nashtech/.ivy2/cache/com.geirsson/metaconfig-core_2.13/jars/metaconfig-core_2.13-0.9.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.13/0.9.10/metaconfig-core_2.13-0.9.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="pprint_2.13">
+			<revision name="0.5.9" status="release" pubdate="20200207102728" resolver="public" artresolver="main" homepage="https://github.com/lihaoyi/PPrint" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="MIT" url="https://spdx.org/licenses/MIT.html"/>
+				<metadata-artifact status="successful" details="" size="1851" time="1540" location="/home/nashtech/.ivy2/cache/com.lihaoyi/pprint_2.13/ivy-0.5.9.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/com.lihaoyi/pprint_2.13/ivy-0.5.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.5.9/pprint_2.13-0.5.9.pom"/>
+				<caller organisation="com.geirsson" name="metaconfig-core_2.13" conf="compile, runtime" rev="0.5.9" rev-constraint-default="0.5.9" rev-constraint-dynamic="0.5.9" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="pprint_2.13" type="jar" ext="jar" status="successful" details="" size="158936" time="1840" location="/home/nashtech/.ivy2/cache/com.lihaoyi/pprint_2.13/jars/pprint_2.13-0.5.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.5.9/pprint_2.13-0.5.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="fansi_2.13">
+			<revision name="0.2.9" status="release" pubdate="20200207101337" resolver="public" artresolver="main" homepage="https://github.com/lihaoyi/Fansi" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+				<license name="MIT" url="https://spdx.org/licenses/MIT.html"/>
+				<metadata-artifact status="successful" details="" size="1245" time="947" location="/home/nashtech/.ivy2/cache/com.lihaoyi/fansi_2.13/ivy-0.2.9.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/com.lihaoyi/fansi_2.13/ivy-0.2.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.2.9/fansi_2.13-0.2.9.pom"/>
+				<caller organisation="com.lihaoyi" name="pprint_2.13" conf="compile, runtime" rev="0.2.9" rev-constraint-default="0.2.9" rev-constraint-dynamic="0.2.9" callerrev="0.5.9"/>
+				<artifacts>
+					<artifact name="fansi_2.13" type="jar" ext="jar" status="successful" details="" size="65196" time="1331" location="/home/nashtech/.ivy2/cache/com.lihaoyi/fansi_2.13/jars/fansi_2.13-0.2.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.2.9/fansi_2.13-0.2.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="sourcecode_2.13">
+			<revision name="0.2.1" status="release" pubdate="20200207003452" resolver="public" artresolver="main" homepage="https://github.com/lihaoyi/sourcecode" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="MIT" url="https://spdx.org/licenses/MIT.html"/>
+				<metadata-artifact status="successful" details="" size="1528" time="939" location="/home/nashtech/.ivy2/cache/com.lihaoyi/sourcecode_2.13/ivy-0.2.1.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/com.lihaoyi/sourcecode_2.13/ivy-0.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.1/sourcecode_2.13-0.2.1.pom"/>
+				<caller organisation="org.scalameta" name="common_2.13" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="4.3.22"/>
+				<caller organisation="com.lihaoyi" name="pprint_2.13" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="0.5.9"/>
+				<caller organisation="org.scalameta" name="fastparse-utils_2.13" conf="compile, runtime" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="1.0.1"/>
+				<caller organisation="com.lihaoyi" name="fansi_2.13" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="0.2.9"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="1.0.1"/>
+				<artifacts>
+					<artifact name="sourcecode_2.13" type="jar" ext="jar" status="successful" details="" size="120127" time="1633" location="/home/nashtech/.ivy2/cache/com.lihaoyi/sourcecode_2.13/jars/sourcecode_2.13-0.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.2.1/sourcecode_2.13-0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.1.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="0.2.1"/>
+				<caller organisation="org.scalameta" name="fastparse-utils_2.13" conf="compile, runtime" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="1.0.1"/>
+				<caller organisation="org.scalameta" name="fastparse_2.13" conf="compile, runtime" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="1.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-collection-compat_2.13">
+			<revision name="2.1.2" status="release" pubdate="20190806095356" resolver="public" artresolver="main" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1992" time="911" location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.13/ivy-2.1.2.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.13/ivy-2.1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.2/scala-collection-compat_2.13-2.1.2.pom"/>
+				<caller organisation="com.geirsson" name="metaconfig-core_2.13" conf="compile, runtime" rev="2.1.2" rev-constraint-default="2.1.2" rev-constraint-dynamic="2.1.2" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="scala-collection-compat_2.13" type="bundle" ext="jar" status="successful" details="" size="4587" time="920" location="/home/nashtech/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.13/bundles/scala-collection-compat_2.13-2.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.2/scala-collection-compat_2.13-2.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="paiges-core_2.13">
+			<revision name="0.3.0" status="release" pubdate="20190923085520" resolver="public" artresolver="main" homepage="https://github.com/typelevel/paiges" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2544" time="821" location="/home/nashtech/.ivy2/cache/org.typelevel/paiges-core_2.13/ivy-0.3.0.xml" searched="true" original-local-location="/home/nashtech/.ivy2/cache/org.typelevel/paiges-core_2.13/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.3.0/paiges-core_2.13-0.3.0.pom"/>
+				<caller organisation="com.geirsson" name="metaconfig-core_2.13" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.9.10"/>
+				<artifacts>
+					<artifact name="paiges-core_2.13" type="jar" ext="jar" status="successful" details="" size="120838" time="1536" location="/home/nashtech/.ivy2/cache/org.typelevel/paiges-core_2.13/jars/paiges-core_2.13-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.13/0.3.0/paiges-core_2.13-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

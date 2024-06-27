@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.google.auth"
+		module="google-auth-library-parent"
+		revision="0.18.0"
+		status="release"
+		publication="20191010004922"
+	>
+		<license name="BSD New license" url="http://opensource.org/licenses/BSD-3-Clause" />
+		<description homepage="https://github.com/googleapis/google-auth-library-java">
+		Client libraries providing authentication and
+    authorization to enable calling Google APIs.
+		</description>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__com.google.http-client__google-http-client-xml__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-xml__version>
+		<m:properties__project.autovalue.version>1.6.6</m:properties__project.autovalue.version>
+		<m:properties__project.junit.version>4.12</m:properties__project.junit.version>
+		<m:dependency.management__com.google.auth__google-auth-library-credentials__version>0.18.0</m:dependency.management__com.google.auth__google-auth-library-credentials__version>
+		<m:properties__project.appengine.version>1.9.74</m:properties__project.appengine.version>
+		<m:dependency.management__com.google.auth__google-auth-library-cloudshell__version>0.18.0</m:dependency.management__com.google.auth__google-auth-library-cloudshell__version>
+		<m:properties__project.google.http.version>1.32.1</m:properties__project.google.http.version>
+		<m:dependency.management__com.google.http-client__google-http-client__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client__version>
+		<m:dependency.management__com.google.http-client__google-http-client-gson__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-gson__version>
+		<e:sbtTransformHash>efa98851d12be9dc27d8c93526bc0f97ff2e753d</e:sbtTransformHash>
+		<m:dependency.management__com.google.http-client__google-http-client-appengine__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-appengine__version>
+		<m:dependency.management__com.google.appengine__appengine-api-1.0-sdk__version>1.9.74</m:dependency.management__com.google.appengine__appengine-api-1.0-sdk__version>
+		<m:maven.plugins>null__maven-compiler-plugin__3.5.1|org.sonatype.plugins__nexus-staging-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.0.0|org.apache.maven.plugins__maven-site-plugin__3.8.2|org.jacoco__jacoco-maven-plugin__0.8.4</m:maven.plugins>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__project.guava.version>28.1-android</m:properties__project.guava.version>
+		<m:dependency.management__com.google.appengine__appengine__scope>test</m:dependency.management__com.google.appengine__appengine__scope>
+		<m:dependency.management__com.google.http-client__google-http-client-android__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-android__version>
+		<m:dependency.management__com.google.guava__guava__version>28.1-android</m:dependency.management__com.google.guava__guava__version>
+		<m:properties__deploy.autorelease>false</m:properties__deploy.autorelease>
+		<m:dependency.management__com.google.http-client__google-http-client-findbugs__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-findbugs__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__project.findbugs.version>3.0.2</m:properties__project.findbugs.version>
+		<m:dependency.management__com.google.http-client__google-http-client-protobuf__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-protobuf__version>
+		<m:dependency.management__com.google.http-client__google-http-client-apache-v2__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-apache-v2__version>
+		<m:dependency.management__com.google.auto.value__auto-value-annotations__version>1.6.6</m:dependency.management__com.google.auto.value__auto-value-annotations__version>
+		<m:dependency.management__com.google.http-client__google-http-client-test__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-test__version>
+		<m:dependency.management__com.google.auth__google-auth-library-oauth2-http__version>0.18.0</m:dependency.management__com.google.auth__google-auth-library-oauth2-http__version>
+		<m:dependency.management__com.google.appengine__appengine__version>1.9.74</m:dependency.management__com.google.appengine__appengine__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:dependency.management__com.google.http-client__google-http-client-jackson2__version>1.32.1</m:dependency.management__com.google.http-client__google-http-client-jackson2__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

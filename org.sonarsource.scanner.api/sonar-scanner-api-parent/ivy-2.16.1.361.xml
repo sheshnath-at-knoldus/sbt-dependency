@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.sonarsource.scanner.api"
+		module="sonar-scanner-api-parent"
+		revision="2.16.1.361"
+		status="release"
+		publication="20210429130928"
+	>
+		<license name="GNU LGPL 3" url="http://www.gnu.org/licenses/lgpl.txt" />
+		<description homepage="https://github.com/SonarSource/sonar-scanner-api">
+		API used by all SonarQube Scanners (Maven, Gradle, Ant, CLI)
+		</description>
+		<m:dependency.management__com.squareup.okhttp3__mockwebserver__version>3.14.2</m:dependency.management__com.squareup.okhttp3__mockwebserver__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.11</m:dependency.management__commons-codec__commons-codec__version>
+		<m:properties__version.enforcer.plugin>3.0.0-M1</m:properties__version.enforcer.plugin>
+		<m:properties__maven.test.redirectTestOutputToFile>true</m:properties__maven.test.redirectTestOutputToFile>
+		<m:properties__jdk.min.version>1.8</m:properties__jdk.min.version>
+		<m:properties__timestamp>${maven.build.timestamp}</m:properties__timestamp>
+		<m:properties__version.clean.plugin>3.1.0</m:properties__version.clean.plugin>
+		<m:properties__version.dependency.plugin>3.1.1</m:properties__version.dependency.plugin>
+		<m:properties__license.owner>SonarSource SA</m:properties__license.owner>
+		<m:properties__version.sonar-packaging.plugin>1.18.0.372</m:properties__version.sonar-packaging.plugin>
+		<m:properties__sonar.snapshotRepository.id>snapshot</m:properties__sonar.snapshotRepository.id>
+		<m:properties__version.jacoco.plugin>0.8.6</m:properties__version.jacoco.plugin>
+		<m:dependency.management__com.squareup.okhttp3__okhttp__version>3.14.2</m:dependency.management__com.squareup.okhttp3__okhttp__version>
+		<m:properties__mockito.version>2.23.4</m:properties__mockito.version>
+		<m:dependency.management__org.mockito__mockito-core__version>2.23.4</m:dependency.management__org.mockito__mockito-core__version>
+		<m:properties__version.deploy.plugin>3.0.0-M1</m:properties__version.deploy.plugin>
+		<m:properties__license.years>${project.inceptionYear}-2021</m:properties__license.years>
+		<m:properties__version.jar.plugin>3.1.2</m:properties__version.jar.plugin>
+		<m:properties__version.compiler.plugin>3.8.1</m:properties__version.compiler.plugin>
+		<m:properties__okhttp.version>3.14.2</m:properties__okhttp.version>
+		<m:properties__version.site.plugin>3.7.1</m:properties__version.site.plugin>
+		<m:properties__license.name>GNU LGPL v3</m:properties__license.name>
+		<m:dependency.management__junit__junit__version>4.13.1</m:dependency.management__junit__junit__version>
+		<m:properties__version.mycila.license.plugin>3.0</m:properties__version.mycila.license.plugin>
+		<m:properties__version.buildnumber.plugin>1.4</m:properties__version.buildnumber.plugin>
+		<m:properties__version.javadoc.plugin>3.1.0</m:properties__version.javadoc.plugin>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd&apos;T&apos;HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:dependency.management__commons-io__commons-io__version>2.6</m:dependency.management__commons-io__commons-io__version>
+		<m:properties__version.sonar-dev.plugin>1.8</m:properties__version.sonar-dev.plugin>
+		<m:properties__version.plugin.plugin>3.6.0</m:properties__version.plugin.plugin>
+		<m:properties__version.beanshell.plugin>1.4</m:properties__version.beanshell.plugin>
+		<m:properties__version.gpg.plugin>0.3.1</m:properties__version.gpg.plugin>
+		<m:properties__gitRepositoryName>sonar-scanner-api</m:properties__gitRepositoryName>
+		<m:dependency.management__org.assertj__assertj-core__version>3.11.1</m:dependency.management__org.assertj__assertj-core__version>
+		<e:sbtTransformHash>0c9a05b1cceef39a36b2c74fee3b5846cf88c293</e:sbtTransformHash>
+		<m:properties__version.resources.plugin>3.1.0</m:properties__version.resources.plugin>
+		<m:properties__maven.min.version>3.3.9</m:properties__maven.min.version>
+		<m:maven.plugins>org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.sonarsource.sonar-packaging-maven-plugin__sonar-packaging-maven-plugin__null|com.mycila__license-maven-plugin__3.0|com.github.genthaler__beanshell-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.sonarsource.sonar-packaging-maven-plugin__sonar-packaging-maven-plugin__null|com.mycila__license-maven-plugin__3.0|com.github.genthaler__beanshell-maven-plugin__null</m:maven.plugins>
+		<m:properties__license.mailto>mailto:info AT sonarsource DOT com</m:properties__license.mailto>
+		<m:properties__version.shade.plugin>3.2.1</m:properties__version.shade.plugin>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:properties__version.source.plugin>3.1.0</m:properties__version.source.plugin>
+		<m:properties__version.surefire.plugin>2.22.2</m:properties__version.surefire.plugin>
+		<m:properties__version.artifactory.plugin>2.6.1</m:properties__version.artifactory.plugin>
+		<m:properties__version.failsafe.plugin>${version.surefire.plugin}</m:properties__version.failsafe.plugin>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__com.squareup.okhttp3__okhttp-urlconnection__version>3.14.2</m:dependency.management__com.squareup.okhttp3__okhttp-urlconnection__version>
+		<m:properties__version.install.plugin>3.0.0-M1</m:properties__version.install.plugin>
+		<m:dependency.management__com.eclipsesource.minimal-json__minimal-json__version>0.9.5</m:dependency.management__com.eclipsesource.minimal-json__minimal-json__version>
+		<m:dependency.management__org.mockito__mockito-inline__version>2.23.4</m:dependency.management__org.mockito__mockito-inline__version>
+		<m:properties__version.codehaus.license.plugin>2.0.0</m:properties__version.codehaus.license.plugin>
+		<m:properties__version.assembly.plugin>3.1.1</m:properties__version.assembly.plugin>
+		<m:properties__version.jarjar.plugin>1.9</m:properties__version.jarjar.plugin>
+		<m:properties__version.native2ascii.plugin>1.0-beta-1</m:properties__version.native2ascii.plugin>
+		<m:properties__license.title>${project.name}</m:properties__license.title>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

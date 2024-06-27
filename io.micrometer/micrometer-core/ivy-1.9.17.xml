@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="io.micrometer"
+		module="micrometer-core"
+		revision="1.9.17"
+		status="release"
+		publication="20231113140249"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="https://github.com/micrometer-metrics/micrometer">
+		Core module of Micrometer containing instrumentation API and implementation
+		</description>
+		<m:properties__nebula_Created_By>20.0.2+9 (Eclipse Adoptium)</m:properties__nebula_Created_By>
+		<m:properties__nebula_Module_Email>tludwig@vmware.com</m:properties__nebula_Module_Email>
+		<m:properties__nebula_Branch>HEAD</m:properties__nebula_Branch>
+		<m:properties__nebula_Build_Number>26626</m:properties__nebula_Build_Number>
+		<m:properties__nebula_Module_Origin>git@github.com:micrometer-metrics/micrometer.git</m:properties__nebula_Module_Origin>
+		<m:properties__nebula_Module_Source>/micrometer-core</m:properties__nebula_Module_Source>
+		<m:properties__nebula_Gradle_Version>8.4</m:properties__nebula_Gradle_Version>
+		<m:properties__nebula_Build_Date_UTC>2023-11-13T08:31:45.802929131Z</m:properties__nebula_Build_Date_UTC>
+		<m:properties__nebula_Full_Change>e487c85ac8079dffe0666381631a056ed734f3be</m:properties__nebula_Full_Change>
+		<m:properties__nebula_Manifest_Version>1.0</m:properties__nebula_Manifest_Version>
+		<m:properties__nebula_Implementation_Title>io.micrometer#micrometer-core;1.9.17</m:properties__nebula_Implementation_Title>
+		<m:properties__nebula_Built_OS>Linux</m:properties__nebula_Built_OS>
+		<m:properties__nebula_Build_Java_Version>20</m:properties__nebula_Build_Java_Version>
+		<m:properties__nebula_Built_By>circleci</m:properties__nebula_Built_By>
+		<m:properties__nebula_Build_Host>366693da2289</m:properties__nebula_Build_Host>
+		<m:properties__nebula_Build_Job>deploy</m:properties__nebula_Build_Job>
+		<m:properties__nebula_Built_Status>release</m:properties__nebula_Built_Status>
+		<m:properties__nebula_Build_Date>2023-11-13_08:31:45</m:properties__nebula_Build_Date>
+		<e:sbtTransformHash>24299d539216592ed6c093702299bdbd4954989e</e:sbtTransformHash>
+		<m:properties__nebula_X_Compile_Target_JDK>1.8</m:properties__nebula_X_Compile_Target_JDK>
+		<m:properties__nebula_Build_Url>https://circleci.com/gh/micrometer-metrics/micrometer/26626</m:properties__nebula_Build_Url>
+		<m:properties__nebula_Build_Timezone>Etc/UTC</m:properties__nebula_Build_Timezone>
+		<m:properties__nebula_X_Compile_Source_JDK>1.8</m:properties__nebula_X_Compile_Source_JDK>
+		<m:properties__nebula_Build_Id>26626</m:properties__nebula_Build_Id>
+		<m:properties__nebula_Implementation_Version>1.9.17</m:properties__nebula_Implementation_Version>
+		<m:properties__nebula_Module_Owner>tludwig@vmware.com</m:properties__nebula_Module_Owner>
+		<m:properties__nebula_Change>e487c85</m:properties__nebula_Change>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="micrometer-core" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.hdrhistogram" name="HdrHistogram" rev="2.1.12" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.latencyutils" name="LatencyUtils" rev="2.0.3" force="true" conf="runtime->compile(*),runtime(*),master(compile)">
+			<exclude org="org.hdrhistogram" module="HdrHistogram" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="com.google.code.findbugs" name="jsr305" rev="3.0.2" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.aspectj" name="aspectjweaver" rev="1.8.14" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="io.dropwizard.metrics" name="metrics-core" rev="4.2.22" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="com.google.guava" name="guava" rev="31.1-jre" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="com.github.ben-manes.caffeine" name="caffeine" rev="2.9.3" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="net.sf.ehcache" name="ehcache" rev="2.10.9.2" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="javax.cache" name="cache-api" rev="1.1.1" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="com.hazelcast" name="hazelcast" rev="5.1.1" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="5.6.15.Final" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.eclipse.jetty" name="jetty-server" rev="9.4.53.v20231009" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.eclipse.jetty" name="jetty-client" rev="9.4.53.v20231009" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.tomcat.embed" name="tomcat-embed-core" rev="8.5.95" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.glassfish.jersey.core" name="jersey-server" rev="2.37" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="io.grpc" name="grpc-api" rev="1.45.1" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.14" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.httpcomponents" name="httpasyncclient" rev="4.1.5" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="com.netflix.hystrix" name="hystrix-core" rev="1.5.12" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.12" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.17.2" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="com.squareup.okhttp3" name="okhttp" rev="5.0.0-alpha.11" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.mongodb" name="mongodb-driver-sync" rev="4.6.1" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.jooq" name="jooq" rev="3.14.16" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.kafka" name="kafka-clients" rev="2.8.2" force="true" conf="optional->compile(*),master(compile)"/>
+		<dependency org="org.apache.kafka" name="kafka-streams" rev="2.8.2" force="true" conf="optional->compile(*),master(compile)"/>
+	</dependencies>
+</ivy-module>

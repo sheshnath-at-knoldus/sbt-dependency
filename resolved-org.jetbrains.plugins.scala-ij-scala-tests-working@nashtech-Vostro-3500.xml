@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+<info organisation="org.jetbrains.plugins.scala" module="ij-scala-tests" revision="working@nashtech-Vostro-3500" status="integration" publication="20240315121138"/>
+ <configurations>
+   <conf name="compile"/>
+ </configurations>
+  <dependencies>
+<dependency org="org.scalameta" name="scalafmt-core_2.13" rev="2.7.5" conf="compile->default(compile)" transitive="true">
+  <artifact name="scalafmt-core_2.13" type="jar" ext="jar"/>
+  
+</dependency>
+     
+
+<dependency org="org.scala-lang" name="scala-reflect" rev="2.13.10" conf="compile->default(compile)" transitive="true">
+  <artifact name="scala-reflect" type="jar" ext="jar"/>
+  
+</dependency>
+     </dependencies>
+</ivy-module>
